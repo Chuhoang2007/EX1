@@ -19,7 +19,11 @@ public class EX1 {
         else{
             System.out.println(b+" khong phai nam nhuan");
         }
-        float c= sc.nextFloat();
+        float mon1= sc.nextFloat();
+        float mon2= sc.nextFloat();
+        float mon3= sc.nextFloat();
+        float c=(mon1+mon2+mon3)/3;
+        c=Math.round(c*10.0)/10.0f;
         float GPA;
         if(c>=9.0){
             GPA = 4.0F;
@@ -36,6 +40,6 @@ public class EX1 {
         else{
             GPA=2.5F;
         }
-        System.out.println("GPA cua "+name+" la: "+GPA);
+        System.out.println("GPA cua "+name+" la: "+GPA+", diem he so cua "+name+" la: "+c);
     }
 }
